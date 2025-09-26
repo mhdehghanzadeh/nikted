@@ -25,8 +25,9 @@ services:
       - "3306:3306"
     environment:
       MYSQL_DATABASE: 'nikted'
-      MYSQL_ROOT_PASSWORD: '123456'
       MYSQL_ALLOW_EMPTY_PASSWORD: 1
+      MYSQL_ROOT_PASSWORD: '123456'
+      DB_HOST: localhost
     volumes:
       - ./db:/var/lib/mysql
     networks:
